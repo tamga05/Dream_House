@@ -1,0 +1,6 @@
+.navigation__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100px;
+    background-color: aqua;
+}
