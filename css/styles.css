@@ -183,6 +183,8 @@ span {
     margin-top: 47px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .dream-house__text-block {
@@ -225,3 +227,32 @@ span {
 }
 
 /* Секция GALLERY */
+
+.gallery__container {
+    margin: 0 auto;
+    max-width: 1470px;
+    padding: 64px 180px;
+}
+
+.gallery__title {
+    text-align: center;
+    font-family: "NewYorkExtraLargeBold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59.52px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.gallery__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    gap: 45px;
+}
+
+.gallery__image:hover {
+    
+}
