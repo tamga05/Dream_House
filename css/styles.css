@@ -290,3 +290,12 @@ span {
     opacity: 1;
     transition: 0.3s;
 }
+
+/* Секция GUARANTEES */
+
+.guarantees__container {
+    margin: 0 auto;
+    max-width: 1470px;
+    padding: 64px 180px;
+}
+
