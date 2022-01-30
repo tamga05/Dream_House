@@ -383,3 +383,28 @@ span {
 .guarantees__btn:hover {
     font-weight: 400;
 }
+
+/* Секция PLANNING */
+
+.planning {
+    background: linear-gradient(180deg, #F9F9F9 22.12%, rgba(249, 249, 249, 0) 100%);
+}
+
+/* Секция COMMENTS */
+
+.comments__container {
+    margin: 0 auto;
+    max-width: 1470px;
+    padding: 64px 180px 75px;
+}
+
+.comments__title {
+    font-family: "NewYorkExtraLargeBold", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59.52px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 40px;
+}
