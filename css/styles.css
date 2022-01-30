@@ -226,9 +226,9 @@ span {
     font-weight: 400;
 }
 
-/* .dream-house__img {
-
-} */
+.dream-house__img {
+    max-width: 100%;
+}
 
 /* Секция GALLERY */
 
@@ -299,3 +299,87 @@ span {
     padding: 64px 180px;
 }
 
+.guarantees__title {
+    font-family: "NewYorkExtraLargeBold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59.52px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.guarantees__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-right: 38px;
+}
+
+.guarantees__right-block {
+    max-width: 382px;
+    width: 100%;
+    padding-top: 46px;
+}
+
+.guarantees__feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+}
+
+.guarantees__feature-content {
+    max-width: 299px;
+    width: 100%;
+
+}
+
+.guarantees__feature-subtitle {
+    margin-bottom: 8px;
+    font-family: "SFUIDisplay-Bold",serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.guarantees__feature-text {
+    font-family: "SFUIDisplay-Regular",serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.guarantees__btn {
+    width: 175px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FD665E;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "SFUIDisplay-Semibold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-left: 83px;
+}
+
+.guarantees__btn:hover {
+    font-weight: 400;
+}
