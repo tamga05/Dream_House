@@ -226,6 +226,10 @@ span {
     font-weight: 400;
 }
 
+/* .dream-house__img {
+
+} */
+
 /* Секция GALLERY */
 
 .gallery__container {
@@ -253,6 +257,36 @@ span {
     gap: 45px;
 }
 
-.gallery__image:hover {
-    
+.gallery__link {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__link:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.4);
+    opacity: 0;
+}
+
+.gallery__link:before {
+        content: '';
+        width: 23.44px;
+        height: 23.44px;
+        position: absolute;
+        background: url(/assets/images/gallery/gallery-search.svg);
+        background-repeat: no-repeat;
+        opacity: 0;
+        z-index: 5;
+}
+
+.gallery__link:hover:after,
+.gallery__link:hover:before {
+    opacity: 1;
+    transition: 0.3s;
 }
