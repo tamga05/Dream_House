@@ -396,8 +396,6 @@ span {
     margin: 0 auto;
     max-width: 1470px;
     padding: 64px 180px 75px;
-    display: flex;
-    flex-direction: column;
 }
 
 .comments__title {
@@ -412,16 +410,23 @@ span {
 }
 
 .comments__swiper {
-    align-self: end;
+    max-width: 765px;
+    height: 300px;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
 }
 
-.swiper {
-    width: 765px;
-    /* height: 300px; */
-}
-
-.swiper-wrapper {
-    width: 765px;
+.comments__swiper::before {
+    content: '';
+    width: 57.02px;
+    height: 39.73px;
+    background: url(/assets/images/comments/quote.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -109.21px;
 }
 
 .swiper__text {
@@ -443,22 +448,38 @@ span {
     line-height: 25.6px;
     letter-spacing: 0.01em;
     color: #000000;
-    margin-bottom: 11px;
 }
 
-/* .swiper-button-prev {
-
-} */
-
-.swiper-button-next {
-    width: 16px;
-    height: 14px;
-    background-image: url(assets/images/comments/arrow-next.svg);
+.swiper__btn-prev {
+    width: 48px;
+    height: 48px;
+    background-image: url(./../assets/images/comments/arrow-prev.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 56px;
+    z-index: 5;
+}
+
+.swiper__btn-next {
+    width: 48px;
+    height: 48px;
+    background-image: url(./../assets/images/comments/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.swiper__btn-prev:hover, .swiper__btn-next:hover {
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(31, 30, 30, 0.03);
+    transition: 0.3s;
 }
 

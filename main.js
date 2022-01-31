@@ -1,16 +1,18 @@
 const swiper = new Swiper('.swiper', {
+
   // Optional parameters
   direction: 'horizontal',
   effect: 'slide',
-  speed: 500,
+  speed: 300,
   autoplay: true,
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper__btn-prev',
+    nextEl: '.swiper__btn-next',
   },
+
 });
 
 
