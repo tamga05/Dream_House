@@ -35,7 +35,7 @@
 .header__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 24px 65px;
+    padding: 24px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +167,7 @@
 .dream-house__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 48px 180px;
+    padding: 48px 165px;
 }
 
 .dream-house__title {
@@ -245,7 +245,7 @@ span {
 .gallery__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 64px 180px;
+    padding: 64px 165px;
 }
 
 .gallery__title {
@@ -306,7 +306,7 @@ span {
 .guarantees__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 64px 180px;
+    padding: 64px 165px;
 }
 
 .guarantees__title {
@@ -344,7 +344,6 @@ span {
 .guarantees__feature-content {
     max-width: 299px;
     width: 100%;
-
 }
 
 .guarantees__feature-subtitle {
@@ -410,7 +409,7 @@ span {
 .comments__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 64px 180px 75px;
+    padding: 64px 165px 75px;
 }
 
 .comments__title {
@@ -502,8 +501,9 @@ span {
 
 .designing__container {
     margin: 0 auto;
-    max-width: 1230px;
-    padding: 64px 45px 64px 0;
+    max-width: 1470px;
+    /* max-width: 1230px; */
+    padding: 64px 165px 64px 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -550,3 +550,59 @@ span {
 }
 
 /* Секция PARTNERS */
+
+.partners__container {
+    margin: 0 auto;
+    max-width: 1470px;
+    padding: 64px 176px 106px 165px;
+}
+
+.partners__title {
+    font-family: "NewYorkExtraLargeBold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59.52px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 58px;
+}
+
+.partners__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.partners__left-block {
+    max-width: 697px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.partners__link {
+    text-decoration: none;
+}
+
+.partners__img {
+    opacity: 0.3;
+}
+
+.partners__img:hover {
+    opacity: initial;
+    transition: 0.3s;
+    transform: scale(1.3);
+}
+
+.partners__right-block {
+    max-width: 324px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 78px;
+}
+
+/* Секция FOOTER */
+
