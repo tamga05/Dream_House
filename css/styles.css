@@ -1,33 +1,33 @@
 /* Подключение шрифтов */
 
 @font-face {
-	font-family: "New York Extra Large Bold";
-	font-display: swap;
-	src: url("./assets/fonts/NewYorkExtraLargeBold.woff") format("woff");
+    font-family: "New York Extra Large Bold";
+    font-display: swap;
+    src: url("./assets/fonts/NewYorkExtraLargeBold.woff") format("woff");
 }
 
 @font-face {
-	font-family: "SFUI Display Bold";
-	font-display: swap;
-	src: url("./assets/fonts/SFUIDisplay-Bold.woff") format("woff");
+    font-family: "SFUI Display Bold";
+    font-display: swap;
+    src: url("./assets/fonts/SFUIDisplay-Bold.woff") format("woff");
 }
 
 @font-face {
-	font-family: "SFUI Display Light";
-	font-display: swap;
-	src: url("./assets/fonts/SFUIDisplay-Light.woff") format("woff");
+    font-family: "SFUI Display Light";
+    font-display: swap;
+    src: url("./assets/fonts/SFUIDisplay-Light.woff") format("woff");
 }
 
 @font-face {
-	font-family: "SFUI Display Regular";
-	font-display: swap;
-	src: url("./assets/fonts/SFUIDisplay-Regular.woff") format("woff");
+    font-family: "SFUI Display Regular";
+    font-display: swap;
+    src: url("./assets/fonts/SFUIDisplay-Regular.woff") format("woff");
 }
 
 @font-face {
-	font-family: "SFUI Display Semibold";
-	font-display: swap;
-	src: url("./assets/fonts/SFUIDisplay-Semibold.woff") format("woff");
+    font-family: "SFUI Display Semibold";
+    font-display: swap;
+    src: url("./assets/fonts/SFUIDisplay-Semibold.woff") format("woff");
 }
 
 /* Секция HEADER */
@@ -138,6 +138,7 @@
     width: 99px;
     height: 48px;
     border: none;
+    outline: none;
     border-radius: 4px;
     background-color: #FD665E;
     cursor: pointer;
@@ -155,6 +156,10 @@
 
 .header__sign-up:hover {
     font-weight: 400;
+}
+
+.header__sign-up:active {
+    background-color: #000000;
 }
 
 /* Секция DREAM-HOUSE */
@@ -207,6 +212,7 @@ span {
     width: 179px;
     height: 56px;
     border: none;
+    outline: none;
     border-radius: 4px;
     background-color: #FD665E;
     cursor: pointer;
@@ -224,6 +230,10 @@ span {
 
 .dream-house__btn:hover {
     font-weight: 400;
+}
+
+.dream-house__btn:active {
+    background-color: #000000;
 }
 
 .dream-house__img {
@@ -275,14 +285,14 @@ span {
 }
 
 .gallery__link:before {
-        content: '';
-        width: 23.44px;
-        height: 23.44px;
-        position: absolute;
-        background: url(/assets/images/gallery/gallery-search.svg);
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: 1;
+    content: '';
+    width: 23.44px;
+    height: 23.44px;
+    position: absolute;
+    background: url(/assets/images/gallery/gallery-search.svg);
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 1;
 }
 
 .gallery__link:hover:after,
@@ -339,7 +349,7 @@ span {
 
 .guarantees__feature-subtitle {
     margin-bottom: 8px;
-    font-family: "SFUIDisplay-Bold",serif;
+    font-family: "SFUIDisplay-Bold", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 16px;
@@ -349,7 +359,7 @@ span {
 }
 
 .guarantees__feature-text {
-    font-family: "SFUIDisplay-Regular",serif;
+    font-family: "SFUIDisplay-Regular", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -362,6 +372,7 @@ span {
     width: 175px;
     height: 56px;
     border: none;
+    outline: none;
     border-radius: 4px;
     background-color: #FD665E;
     cursor: pointer;
@@ -382,6 +393,10 @@ span {
 
 .guarantees__btn:hover {
     font-weight: 400;
+}
+
+.guarantees__btn:active {
+    background-color: #000000;
 }
 
 /* Секция PLANNING */
@@ -486,10 +501,52 @@ span {
 /* Секция DESIGNING */
 
 .designing__container {
-
     margin: 0 auto;
-
     max-width: 1230px;
-    padding: 64px 180px 64px 135px;
+    padding: 64px 45px 64px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
+.designing__title {
+    font-family: "NewYorkExtraLargeBold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 59.52px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-top: 299px;
+    margin-bottom: 64px;
+}
+
+.designing__btn {
+    width: 204px;
+    height: 56px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #FD665E;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "SFUIDisplay-Semibold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.designing__btn:hover {
+    font-weight: 400;
+}
+
+.designing__btn:active {
+    background-color: #000000;
+}
+
+/* Секция PARTNERS */
