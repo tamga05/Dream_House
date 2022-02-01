@@ -483,3 +483,13 @@ span {
     transition: 0.3s;
 }
 
+/* Секция DESIGNING */
+
+.designing__container {
+
+    margin: 0 auto;
+
+    max-width: 1230px;
+    padding: 64px 180px 64px 135px;
+}
+

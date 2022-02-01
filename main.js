@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
   autoplay: true,
   loop: true,
 
-  // Navigation arrows
+  // Navigation buttons
   navigation: {
     prevEl: '.swiper__btn-prev',
     nextEl: '.swiper__btn-next',
