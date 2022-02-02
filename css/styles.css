@@ -91,6 +91,11 @@
     cursor: pointer;
 }
 
+.header__menu-item:active {
+    background-color: #FD665E;
+    color: #FFFFFF;
+}
+
 .header__right-block {
     width: 246px;
     display: flex;
@@ -609,7 +614,7 @@ span {
 .footer__container {
     margin: 0 auto;
     max-width: 1470px;
-    padding: 84px 165px;
+    padding: 84px 165px 84px 137px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -617,6 +622,10 @@ span {
 
 .footer__list {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 }
 
 .footer__link {
@@ -624,12 +633,35 @@ span {
 }
 
 .footer__item {
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
     text-decoration: none;
+    padding: 4px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SFUIDisplay-Semibold", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #000000;
 }
 
-.footer__logo-link {
-
+.footer__item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
 }
+
+.footer__item:active {
+    background-color: #FD665E;
+    color: #FFFFFF;
+}
+
+
 
 
 
