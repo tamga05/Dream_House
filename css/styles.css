@@ -174,7 +174,7 @@
 .close_icon {
     position: absolute;
     width: 50px;
-    height: 50px;
+    height: 70px;
     cursor: pointer;
 }
 
@@ -288,7 +288,8 @@
     height: 48px;
     border: none;
     border-radius: 4px;
-    background-color: #585858;;
+    background-color: #585858;
+    ;
     cursor: pointer;
     font-family: "SFUIDisplay-Regular", serif;
     font-weight: 400;
@@ -407,7 +408,32 @@ span {
 }
 
 .dream-house__img {
-    max-width: 100%;
+    max-width: 765px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1404px) {
+    .dream-house__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dream-house__title {
+        font-size: 80px;
+    }
+
+    .dream-house__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dream-house__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Секция GALLERY */
