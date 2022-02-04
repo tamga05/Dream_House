@@ -172,6 +172,64 @@
     background-color: #000000;
 }
 
+/* Burger Menu */
+
+/* .burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: url(./../assets/images/burger.svg) no-repeat center;
+    transition: 0.2s;
+    background-size: contain;
+    display: none;
+
+}
+.burger_active {
+    background: url(./../assets/images/close.svg) no-repeat center;
+    background-size: contain;
+} */
+
+.burger_icon,
+.close_icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.burger_icon {
+    background: url(./../assets/images/burger.svg) no-repeat center;
+    background-size: contain;
+}
+.close_icon {
+    background: url(./../assets/images/close.svg) no-repeat center;
+    background-size: contain;
+    margin: 20px 40px 20px 40px;
+}
+.burger_menu {
+    background-color: rgb(59, 206, 186);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    transition: 0.3s;
+}
+.burger_menu_active {
+    left: 0;
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .burger {display: block}
+    .header__search-link {display: none}
+    .header__sign-in {display: none}
+    .header__sign-up {display: none}
+    .header__menu {display: none}
+    .header__right-block {justify-content: flex-end}
+}
+
 /* Секция DREAM-HOUSE */
 
 .dream-house__container {
@@ -287,8 +345,8 @@ span {
 
 .gallery__link:after {
     content: '';
-    width: 100%;
-    height: 100%;
+    width: 340px;
+    height: 432px;
     position: absolute;
     background: rgba(30, 30, 30, 0.4);
     opacity: 0;
@@ -624,7 +682,6 @@ span {
     margin: 0 auto;
     max-width: 1470px;
     padding: 84px 165px 84px 137px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -670,8 +727,3 @@ span {
     background-color: #FD665E;
     color: #FFFFFF;
 }
-
-
-
-
-
