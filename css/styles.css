@@ -55,10 +55,6 @@
 .logo:hover {
     transform: scale(1.5);
     transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 
 .header__menu {
@@ -174,21 +170,6 @@
 
 /* Burger Menu */
 
-/* .burger {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background: url(./../assets/images/burger.svg) no-repeat center;
-    transition: 0.2s;
-    background-size: contain;
-    display: none;
-
-}
-.burger_active {
-    background: url(./../assets/images/close.svg) no-repeat center;
-    background-size: contain;
-} */
-
 .burger_icon,
 .close_icon {
     position: absolute;
@@ -196,38 +177,159 @@
     height: 50px;
     cursor: pointer;
 }
+
 .burger_icon {
     background: url(./../assets/images/burger.svg) no-repeat center;
     background-size: contain;
+    display: none;
 }
+
 .close_icon {
     background: url(./../assets/images/close.svg) no-repeat center;
     background-size: contain;
-    margin: 20px 40px 20px 40px;
+    margin: 15px 50px 15px 50px;
+    top: 0;
+    right: 0;
 }
+
 .burger_menu {
-    background-color: rgb(59, 206, 186);
-    height: 100vh;
+    background-color: #ffdedc;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     z-index: 999;
     transition: 0.3s;
 }
+
 .burger_menu_active {
-    left: 0;
+    right: 0;
 }
 
-
-
 @media screen and (max-width: 920px) {
-    .burger {display: block}
-    .header__search-link {display: none}
-    .header__sign-in {display: none}
-    .header__sign-up {display: none}
-    .header__menu {display: none}
-    .header__right-block {justify-content: flex-end}
+
+    .header__container {
+        height: 96px;
+    }
+
+    .burger_icon {
+        display: block;
+        top: 15px;
+        right: 50px;
+        transition: 0.3s;
+    }
+
+    .header__search-link,
+    .header__sign-in,
+    .header__sign-up,
+    .header__menu {
+        display: none;
+    }
+
+    .header__right-block {
+        justify-content: flex-end;
+    }
+}
+
+.burger_menu__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.burger_menu__search-link {
+    margin-bottom: 30px;
+}
+
+.burger_menu__search-img {
+    margin-top: 30px;
+    transform: scale(1.5);
+}
+
+.burger_menu__search-img:hover {
+    transform: scale(2.2);
+}
+
+.burger_menu__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.burger_menu__link {
+    text-decoration: none;
+}
+
+.burger_menu__item {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    border-radius: 4px;
+    font-family: "SFUIDisplay-Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+}
+
+.burger_menu__item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.burger_menu__sign-in {
+    margin-bottom: 30px;
+    width: 91px;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #585858;;
+    cursor: pointer;
+    font-family: "SFUIDisplay-Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_menu__sign-in:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: #000000;
+}
+
+.burger_menu__sign-up {
+    margin-bottom: 30px;
+    width: 91px;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FD665E;
+    cursor: pointer;
+    font-family: "SFUIDisplay-Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_menu__sign-up:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: #f10e0e;
 }
 
 /* Секция DREAM-HOUSE */
