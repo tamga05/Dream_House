@@ -966,6 +966,12 @@ span {
     opacity: initial;
     transition: 0.3s;
     transform: scale(1.3);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
+.partners__img:active {
+    box-shadow: 0 0 15px #585858;
 }
 
 .partners__right-block {
