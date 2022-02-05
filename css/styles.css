@@ -793,7 +793,7 @@ span {
 
 @media screen and (max-width: 720px) {
     .comments__container {
-        padding: 30px 60px 30px;
+        padding: 30px 60px 20px;
     }
 
     .comments__title {
@@ -824,10 +824,15 @@ span {
 .designing__container {
     margin: 0 auto;
     max-width: 1470px;
-    /* max-width: 1230px; */
     padding: 64px 165px 64px 120px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.designing__img {
+    max-width: 497px;
+    width: 100%;
 }
 
 .designing__title {
@@ -869,6 +874,40 @@ span {
 
 .designing__btn:active {
     background-color: #000000;
+}
+
+@media screen and (max-width: 1211px) {
+    .designing__container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px 40px;
+    }
+
+    .designing__title {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .designing__right-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .designing__container {
+        padding: 40px 15px 40px;
+    }
+
+    .designing__img {
+        margin-top: 80px;
+    }
+
+    .designing__title {
+        text-align: center;
+        font-size: 40px;
+    }
 }
 
 /* Секция PARTNERS */
