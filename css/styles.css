@@ -436,6 +436,13 @@ span {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .dream-house__title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
 /* Секция GALLERY */
 
 .gallery__container {
@@ -495,6 +502,35 @@ span {
 .gallery__link:hover:before {
     opacity: 1;
     transition: 0.3s;
+}
+
+.gallery__image {
+    max-width: 340px;
+    width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+    .gallery__photos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__container {
+        padding: 50px 100px;
+    }
+
+    .gallery__photos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery__container {
+        padding: 30px 50px;
+    }
 }
 
 /* Секция GUARANTEES */
