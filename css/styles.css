@@ -802,7 +802,7 @@ span {
 
 @media screen and (max-width: 720px) {
     .comments__container {
-        padding: 30px 60px 20px;
+        padding: 30px 40px 20px;
     }
 
     .comments__title {
@@ -1071,4 +1071,19 @@ span {
 .footer__item:active {
     background-color: #FD665E;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 990px) {
+    .footer__container {
+        padding: 40px 100px 40px 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }
