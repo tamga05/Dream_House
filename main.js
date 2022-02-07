@@ -31,3 +31,21 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper__btn-next",
   },
 });
+
+// Инициализация библиотеки Popup //
+
+$(".test-popup-link").magnificPopup({
+  type: "image",
+
+  // other options
+
+  gallery: {
+    // options for gallery
+    enabled: true,
+  },
+
+  image: {
+    // options for image content type
+    titleSrc: "title",
+  },
+});
