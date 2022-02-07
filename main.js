@@ -29,7 +29,7 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     prevEl: ".swiper__btn-prev",
     nextEl: ".swiper__btn-next",
-  },
+  }
 });
 
 // Инициализация библиотеки Popup //
@@ -47,5 +47,5 @@ $(".test-popup-link").magnificPopup({
   image: {
     // options for image content type
     titleSrc: "title",
-  },
+  }
 });
