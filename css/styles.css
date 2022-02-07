@@ -492,7 +492,7 @@ span {
     width: 23.44px;
     height: 23.44px;
     position: absolute;
-    background: url(/assets/images/gallery/gallery-search.svg);
+    background: url(../assets/images/gallery/gallery-search.svg);
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 1;
