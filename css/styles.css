@@ -730,7 +730,7 @@ span {
     content: '';
     width: 57.02px;
     height: 39.73px;
-    background: url(./assets/images/comments/quote.svg);
+    background: url(../assets/images/comments/quote.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
