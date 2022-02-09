@@ -140,6 +140,11 @@
     background: rgba(0, 0, 0, 0.03);
 }
 
+.header__sign-in:active {
+    background-color: #FD665E;
+    color: #FFFFFF;
+}
+
 .header__sign-up {
     width: 99px;
     height: 48px;
